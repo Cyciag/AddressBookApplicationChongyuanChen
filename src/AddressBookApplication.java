@@ -1,8 +1,6 @@
 /**
- *
  * @author Chongyuan Chen
  * @since January 2020
- *
  * main AddressBookApplication: purpose is to invoke some methods of the Menu class
  **/
 
@@ -10,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- * The main class that prompts for the user's choice
+ * The main class that calls menuSelection prompting for user input
  */
 class AddressBookApplication
 {

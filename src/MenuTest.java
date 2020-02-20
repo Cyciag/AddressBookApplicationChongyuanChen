@@ -34,8 +34,9 @@ public class MenuTest {
         entry.setLastName(scanner.next());
     }
     @Test
-    public void removeEntryTest(AddressBook ab)   //Find is included because you need to find the entries before removing them
+    public void removeEntryTest()
     {
+        AddressBook ab = new AddressBook();
         System.out.println("Please enter the last name of the address entry that you want removed:");
         String find = scanner.next();
         ArrayList<Integer> selectedEntries = new ArrayList<Integer>();

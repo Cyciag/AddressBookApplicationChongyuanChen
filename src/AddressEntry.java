@@ -1,4 +1,4 @@
-/**This class is an object of AddressEntry that contains several pieces of information about the individual.
+/**This class is an object of AddressEntry that contains several pieces of information about the individual entry.
  * It also contains methods to alter and return these data.
  */
 
@@ -16,7 +16,7 @@ public class AddressEntry
     }
 
     /**
-     * constructor that takes in all the information needed to create one single address entry
+     * constructor that takes in all the information needed to initialize 1 address entry
      */
     AddressEntry(String firstName, String lastName, String street, String city, String state, int zip, String email, String phone)  //constructor that takes all the data as parameter
     {
@@ -29,7 +29,12 @@ public class AddressEntry
         this.email = email;
         this.phone = phone;
     }
-    public String toString()    //Takes all of the AddressEntry's data and composes them into a single string then returns it
+
+    /**
+     * Takes all of the AddressEntry's data and composes them into a single string then returns it
+     * @return single string with all information
+     */
+    public String toString()
     {
         return "First Name: " + firstName + ", " +
                 "Last Name: " + lastName + ", " +
@@ -43,7 +48,6 @@ public class AddressEntry
 
     /**
      * Sets first name
-     * @return
      */
     public void setFirstName(String firstName)
     {
@@ -52,7 +56,7 @@ public class AddressEntry
 
     /**
      * Gets first name
-     * @return firstName
+     * @return firstName - entry first name
      */
     public String getFirstName()
     {
@@ -61,7 +65,6 @@ public class AddressEntry
 
     /**
      * Sets last name
-     * @return
      */
     public void setLastName(String lastName)
     {
@@ -70,7 +73,7 @@ public class AddressEntry
 
     /**
      * Gets Last name
-     * @return lastName
+     * @return lastName - entry lastName
      */
     public String getLastName()
     {
@@ -79,7 +82,6 @@ public class AddressEntry
 
     /**
      * Sets street name
-     * @return
      */
     public void setStreet(String street)
     {
@@ -88,7 +90,7 @@ public class AddressEntry
 
     /**
      * Gets street name
-     * @return street
+     * @return street - entry street name
      */
     public String getStreet()
     {
@@ -97,7 +99,6 @@ public class AddressEntry
 
     /**
      * Sets city
-     * @return
      */
     public void setCity(String city)
     {
@@ -105,7 +106,7 @@ public class AddressEntry
     }
     /**
      * Gets city
-     * @return city
+     * @return city - entry city name
      */
     public String getCity()
     {
@@ -114,7 +115,6 @@ public class AddressEntry
 
     /**
      * Sets state
-     * @return
      */
     public void setState(String state)
     {
@@ -123,7 +123,7 @@ public class AddressEntry
 
     /**
      * Gets state name
-     * @return state
+     * @return state - entry state name
      */
     public String getState()
     {
@@ -132,7 +132,6 @@ public class AddressEntry
 
     /**
      * Sets zip code
-     * @return
      */
     public void setZip(int zip)
     {
@@ -141,7 +140,7 @@ public class AddressEntry
 
     /**
      * Gets zip code
-     * @return firstName
+     * @return zip - entry zip code
      */
     public int getZip()
     {
@@ -150,7 +149,6 @@ public class AddressEntry
 
     /**
      * Sets phone number
-     * @return
      */
     public void setPhone(String phone)
     {
@@ -159,7 +157,7 @@ public class AddressEntry
 
     /**
      * Gets phone number
-     * @return phone
+     * @return phone - entry phone number
      */
     public String getPhone()
     {
@@ -168,7 +166,6 @@ public class AddressEntry
 
     /**
      * Sets user email
-     * @return
      */
     public void setEmail(String email)
     {
@@ -177,7 +174,7 @@ public class AddressEntry
 
     /**
      * Gets user email
-     * @return email
+     * @return email - entry email
      */
     public String getEmail()
     {

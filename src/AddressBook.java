@@ -26,7 +26,7 @@ public class AddressBook
      */
     public void list()
     {
-        System.out.println("Here is a list of all the entries currently in the address book: ");
+        System.out.println("Here is a list of all the entries currently in the address book in alphabetical order: ");
         for(int x = 0; x < addressEntryList.size(); x++)    //iterates through the addressEntryList
         {
             System.out.println("Entry " + (x + 1) + ":");
