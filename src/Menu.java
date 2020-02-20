@@ -74,7 +74,15 @@ class Menu
         entry.setStreet(prompt_Street());
         entry.setCity(prompt_City());
         entry.setState(prompt_State());
-        entry.setZip(prompt_Zip());
+        while(true) {
+            try {
+                entry.setZip(prompt_Zip());
+                break;
+            } catch (Exception e) {
+                System.out.println("Something went wrong.");
+                scanner.nextLine();
+            }
+        }
         scanner.nextLine();
         entry.setPhone(prompt_Telephone());
         entry.setEmail(prompt_Email());
@@ -266,4 +274,4 @@ class Menu
         System.out.println("Email: ");
         return scanner.nextLine();
     }
-} 
+}
