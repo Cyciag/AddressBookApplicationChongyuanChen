@@ -79,7 +79,7 @@ class Menu
                 entry.setZip(prompt_Zip());
                 break;
             } catch (Exception e) {
-                System.out.println("Something went wrong.");
+                System.out.println("Invalid input. Please enter a zip code.");
                 scanner.nextLine();
             }
         }
